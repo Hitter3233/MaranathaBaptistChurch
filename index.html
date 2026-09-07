@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Church Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <button id="menuBtn" class="icon-btn" aria-label="Open menu">☰</button>
+      <div class="brand">
+        <img id="logo" src="assets/logo.svg" alt="Church logo">
+        <span id="churchName">Church Hub</span>
+      </div>
+      <div class="clock">
+        <div id="time">--:--:--</div>
+        <div id="date">Loading date…</div>
+      </div>
+    </header>
+
+    <aside id="sidebar" class="sidebar">
+      <nav>
+        <button data-page="home" class="nav-item active">📖 <span>Verse of the Day</span></button>
+        <button data-page="events" class="nav-item">📅 <span>Events</span></button>
+        <button data-page="announcements" class="nav-item">📢 <span>Announcements</span></button>
+        <button data-page="live" class="nav-item">📺 <span>Watch Live</span></button>
+        <button data-page="sermons" class="nav-item">🎤 <span>Sermons</span></button>
+        <button data-page="contact" class="nav-item">📞 <span>Contact</span></button>
+      </nav>
+      <div class="sidebar-footer">Church Hub</div>
+    </aside>
+
+    <main id="content" class="content"></main>
+    <div id="overlay" class="overlay"></div>
+    <div id="status" class="status">Connecting…</div>
+  </div>
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
